@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @post.title
+%p
+  %b Author Email:
+  = @post.user.email
+%p
+  %b Content:
+  = @post.content
+%p
+  %b Read time:
+  = @post.reading_time
+  mins
+
+= link_to 'Edit', edit_post_path(@post)
+\|
+= link_to 'Back', posts_path
