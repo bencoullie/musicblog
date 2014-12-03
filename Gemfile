@@ -17,8 +17,13 @@ gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'unicorn'
 gem 'unicorn-rails'
+
+# USER ROLES
 gem 'cancancan', '~> 1.9'
+
+# AUTOMATIC SEEDING
 gem 'seed_dump'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
